@@ -1,0 +1,31 @@
+import com.sun.org.apache.bcel.internal.generic.IfInstruction;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hallo Welt!");
+		
+		int zahl1 = 3;
+		int zahl2 = 5;
+		
+		int zahl3 = zahl1 + zahl2;
+		
+		System.out.println("Ergebnis: " + zahl3);
+		
+		System.out.println("Hulehule Bambule!!!");
+		
+		System.out.print("Schnapp!");
+		System.out.append(" AAAAAAH!!!!");
+		System.out.print("\n");
+		
+		System.out.println("WTF Happened here?");
+		
+		if (zahl3 < 7) {
+			System.out.println("Minifuzzi" + zahl3);
+		}else {
+			System.out.println("Maxifuzzi" + zahl3);
+		}
+	}
+
+}

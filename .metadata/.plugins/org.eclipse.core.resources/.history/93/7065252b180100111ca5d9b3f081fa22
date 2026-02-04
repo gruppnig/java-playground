@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		// Variables
+		Random rnd = new Random();
+		
+		int zahl1 = 3;
+		int zahl2 =  rnd.nextInt(10) + 1;
+		
+		int zahl3 = zahl1 + zahl2;
+		
+		System.out.println("Ergebnis: " + zahl3);
+		
+		System.out.println("Hulehule Bambule!!!");
+		
+		System.out.print("Schnapp!");
+		System.out.append(" AAAAAAH!!!!");
+		System.out.print("\n");
+		
+		System.out.println("WTF Happened here?");
+		
+		if (zahl3 < 7) {
+			System.out.println("Minifuzzi" + zahl3);
+		}else {
+			System.out.println("Maxifuzzi" + zahl3);
+		}
+	}
+
+}
