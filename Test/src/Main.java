@@ -2,6 +2,7 @@
 // IMPORTS
 // ************************************************************
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -49,6 +50,7 @@ public class Main {
 		// ************************************************************
 		// logical conditions
 		// ************************************************************
+		Gap();
 		if (zahl1 < 50 && zahl2 > 50) {
 			System.out.println("Zahl1 kleiner 50 und Zahl2 grösser 50: " + zahl1 + ", " + zahl2);
 		}
@@ -60,6 +62,27 @@ public class Main {
 		}else {
 			System.out.println("testFlag ist TRUE");
 		}
+		
+		// verify input
+		Gap();
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Gib eine Zahl zwischen 1 und 10 ein");
+		String input = scanner.nextLine();
+		int nrInput = -1;
+		
+		try {
+			nrInput = Integer.parseInt(input);
+		} catch (NumberFormatException e) {
+			System.out.println("Ungültige Zahl eingegeben");
+		}
+		
+		if (nrInput <= 5) {
+			System.out.println("Zahl zwischen 1 und 5");
+		} else {
+			System.out.println("Zahl zwischen 6 und 10");
+		}
+		
 	}
 	
 	
