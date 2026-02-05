@@ -9,28 +9,35 @@ public class Main {
 		
 		// Variables and Objects
 		Random rnd = new Random();
-		int zahl1 = 3;
-		int zahl2 =  rnd.nextInt(10) + 1;
+		int zahl1 = rnd.nextInt(99) +1;
+		int zahl2 =  rnd.nextInt(99) + 1;
 		int ergebnis = zahl1 + zahl2;
+		boolean testFlag = rnd.nextBoolean();
 		
 		// Some Nonsense
 		System.out.println("Hulehule Bambule!!!");
 		System.out.print("Schnapp!");
-		System.out.append(" AAAAAAH!!!!");
-		System.out.print("\n");
+		System.out.append(" AAAAAAH!!!!\n");
+		Gap(1);
 		System.out.println("WTF Happened here?");
+		Gap();
+		Gap(1,'-', 20);
 		
 		// control structures
-		if (ergebnis < 7) {
+		if (ergebnis < 50) {
 			System.out.println("Minifuzzi! " + ergebnis);
 		}else {
 			System.out.println("Maxifuzzi! " + ergebnis);
 		}
+		Gap(1,'-', 20);
+		Gap();
 		
 		
-		
-		// strings
+		// ************************************************************
+		// Strings
+		// ************************************************************
 		String strName = "Gerald";
+		strName += " Ruppnig";
 		Gap(2);
 		System.out.println("Name: " + strName);
 		strName = strName.toLowerCase();
@@ -39,6 +46,20 @@ public class Main {
 		Gap(5, '#', 50);
 		System.out.println("WAAS? " + strName + "!");
 		
+		// ************************************************************
+		// logical conditions
+		// ************************************************************
+		if (zahl1 < 50 && zahl2 > 50) {
+			System.out.println("Zahl1 kleiner 50 und Zahl2 grösser 50: " + zahl1 + ", " + zahl2);
+		}
+		if (zahl1 < 50 || ergebnis > 100) {
+			System.out.println("Zahl1 kleiner 50 oder Ergebnis > 100: "  + zahl1 + ", " + zahl2 );
+		}
+		if (!testFlag) {
+			System.out.println("testFlag ist FALSE" );
+		}else {
+			System.out.println("testFlag ist TRUE");
+		}
 	}
 	
 	
@@ -46,11 +67,16 @@ public class Main {
 	// ************************************************************
 	// Methods
 	// ************************************************************
+	public static void Gap() {
+		System.out.println();
+	}
+	
 	public static void Gap(int rows ) {
 		for(int i=0; i<rows; i++) {
 			System.out.println();
 		}
 	}
+	
 	public static void Gap(int rows, char character, int width ) {
 		String  charRow = String.valueOf(character).repeat(width);
 		for(int i=0; i<rows; i++) {
