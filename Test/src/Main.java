@@ -77,11 +77,19 @@ public class Main {
 			System.out.println("Ungültige Zahl eingegeben");
 		}
 		
+		// 1st method
 		if (nrInput <= 5) {
 			System.out.println("Zahl zwischen 1 und 5");
 		} else {
 			System.out.println("Zahl zwischen 6 und 10");
 		}
+		
+		// 2nd method
+		String result = "";
+		result = nrInput <=5 
+				? "V2: Zahl zwischen 1 und 5" 
+				: "V2: Zahl zwischen 6 und 10";
+		System.out.println(result);
 		
 	}
 	
