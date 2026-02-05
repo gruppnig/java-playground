@@ -5,17 +5,34 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
 		
+		// ************************************************************
 		// Variables and Objects
+		// ************************************************************
+		
 		Random rnd = new Random();
 		int zahl1 = rnd.nextInt(99) +1;
 		int zahl2 =  rnd.nextInt(99) + 1;
 		int ergebnis = zahl1 + zahl2;
 		boolean testFlag = rnd.nextBoolean();
 		
+		String[] strWeekdays = new String[] {"Montag", "Dienstag", "Mittwoch", "Donnerstag",
+                "Freitag", "Samstag", "Sonntag"};
+
+		int[] fibonacciNumbers = {1, 2, 3, 5, 7, 11};
+		
+		// ************************************************************
+		// print args
+		// ************************************************************
+		for (int i = 0; i < args.length; i++) {
+			System.out.println("Argument " + (i+1) + ": " + args[i]);
+		}
+		
+		// ************************************************************
 		// Some Nonsense
+		// ************************************************************
 		System.out.println("Hulehule Bambule!!!");
 		System.out.print("Schnapp!");
 		System.out.append(" AAAAAAH!!!!\n");
@@ -24,7 +41,9 @@ public class Main {
 		Gap();
 		Gap(1,'-', 20);
 		
+		// ************************************************************
 		// control structures
+		// ************************************************************
 		if (ergebnis < 50) {
 			System.out.println("Minifuzzi! " + ergebnis);
 		}else {
@@ -63,7 +82,10 @@ public class Main {
 			System.out.println("testFlag ist TRUE");
 		}
 		
+		// ************************************************************
 		// verify input
+		// ************************************************************
+		
 		Gap();
 		Scanner scanner = new Scanner(System.in);
 		
@@ -92,8 +114,7 @@ public class Main {
 		System.out.println(result);
 		
 	}
-	
-	
+
 	
 	// ************************************************************
 	// Methods
