@@ -1,1 +1,13 @@
-/.metadata/
+# Eclipse workspace
+.metadata/
+.recommenders/
+.settings/
+
+# Eclipse project files
+.classpath
+.project
+
+# Build / temp
+bin/
+target/
+*.log
