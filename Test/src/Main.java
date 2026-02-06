@@ -19,7 +19,7 @@ public class Main {
 		boolean testFlag = rnd.nextBoolean();
 		
 		String[] strWeekdays = new String[] {"Montag", "Dienstag", "Mittwoch", "Donnerstag",
-                "Freitag", "Samstag", "Sonntag"};
+				"Freitag", "Samstag", "Sonntag"};
 
 		int[] fibonacciNumbers = {1, 2, 3, 5, 7, 11};
 		
@@ -87,6 +87,7 @@ public class Main {
 		// ************************************************************
 		
 		Gap();
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Gib eine Zahl zwischen 1 und 10 ein");
